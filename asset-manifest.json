@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/apod-front/static/css/main.96c0c9ab.chunk.css",
-    "main.js": "/apod-front/static/js/main.ce1e0b6d.chunk.js",
-    "main.js.map": "/apod-front/static/js/main.ce1e0b6d.chunk.js.map",
+    "main.js": "/apod-front/static/js/main.aa0c75de.chunk.js",
+    "main.js.map": "/apod-front/static/js/main.aa0c75de.chunk.js.map",
     "runtime-main.js": "/apod-front/static/js/runtime-main.be9aa9da.js",
     "runtime-main.js.map": "/apod-front/static/js/runtime-main.be9aa9da.js.map",
-    "static/css/2.eafe90c9.chunk.css": "/apod-front/static/css/2.eafe90c9.chunk.css",
+    "static/css/2.43dd304e.chunk.css": "/apod-front/static/css/2.43dd304e.chunk.css",
     "static/js/2.c77285e8.chunk.js": "/apod-front/static/js/2.c77285e8.chunk.js",
     "static/js/2.c77285e8.chunk.js.map": "/apod-front/static/js/2.c77285e8.chunk.js.map",
     "index.html": "/apod-front/index.html",
-    "static/css/2.eafe90c9.chunk.css.map": "/apod-front/static/css/2.eafe90c9.chunk.css.map",
+    "static/css/2.43dd304e.chunk.css.map": "/apod-front/static/css/2.43dd304e.chunk.css.map",
     "static/css/main.96c0c9ab.chunk.css.map": "/apod-front/static/css/main.96c0c9ab.chunk.css.map",
     "static/js/2.c77285e8.chunk.js.LICENSE.txt": "/apod-front/static/js/2.c77285e8.chunk.js.LICENSE.txt",
     "static/media/faqs-background.c2c7804d.jpg": "/apod-front/static/media/faqs-background.c2c7804d.jpg",
@@ -17,9 +17,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.be9aa9da.js",
-    "static/css/2.eafe90c9.chunk.css",
+    "static/css/2.43dd304e.chunk.css",
     "static/js/2.c77285e8.chunk.js",
     "static/css/main.96c0c9ab.chunk.css",
-    "static/js/main.ce1e0b6d.chunk.js"
+    "static/js/main.aa0c75de.chunk.js"
   ]
 }
