@@ -1,0 +1,30 @@
+.nav-router {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  .logo-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    .logo {
+      height: 20px;
+    }
+  }
+  .menu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0px;
+    .link {
+      list-style: none;
+      padding: 15px 15px;
+      &-icon {
+        color: var(--primary-color);
+      }
+      &-text {
+        color: #222;
+      }
+    }
+  }
+}
