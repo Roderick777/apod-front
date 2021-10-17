@@ -1,7 +1,8 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 export class Service {
   // public static baseUrl = 'http://localhost:3333/';
-  public static baseUrl = 'http://147.182.255.212/'
+  // public static baseUrl = 'http://147.182.255.212/'
+  public static baseUrl = 'https://appapod.com/'
 
   public static async get<T>(url: string) {
     const data: AxiosResponse<T> = await axios.get(
