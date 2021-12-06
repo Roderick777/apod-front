@@ -5,7 +5,7 @@ import HomeCaracteristicas from './components/HomeCaracteristicas'
 import HomeFAQ from './components/HomeFAQ'
 import HomeNoticias from './components/HomeNoticias'
 import HomeSlider from './components/HomeSlider'
-import Footer from '../../components/Footer/Footer'
+import { Footer } from '../../components/Footer/Footer'
 import './HomeView.scss'
 
 interface Props {}
@@ -31,7 +31,7 @@ const HomeView = (props: Props) => {
       {/* <HomeCaracteristicas /> */}
       {/* <HomeNoticias /> */}
       <HomeFAQ faqs={faqs} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

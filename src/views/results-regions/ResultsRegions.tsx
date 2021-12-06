@@ -54,7 +54,9 @@ const ResultsRegions: React.FC<Props> = ({ processId }) => {
               </Col>
             </Row>
             <div>
-              {regionsData.length && !loading && (
+              {loading ? (
+                <div>Cargando</div>
+              ) : (
                 <Table
                   dataSource={regionsData}
                   columns={columns}

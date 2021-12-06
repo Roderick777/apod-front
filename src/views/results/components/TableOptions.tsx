@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
-import { Avatar, Table } from 'antd'
+import { Alert, Avatar, Button, Col, Row, Table } from 'antd'
 import { ResultsContext } from '../context/ResultsContextProvider'
 import { IOpcionVoto } from '../../../interfaces/OpcionVoto.interface'
+import { useDownload } from '../../../hooks/useDownload'
+import { FileExcelOutlined } from '@ant-design/icons'
 
 interface Props {}
 
@@ -34,22 +36,64 @@ const TableOptions = (props: Props) => {
     },
     {
       title: 'Porcentaje de Votos',
-      dataIndex: 'porcentaje_voto',
-      key: 'porcentaje_voto',
+      dataIndex: 'porcentaje',
+      key: 'porcentaje',
       render: (value: any) => <span>{value} %</span>,
     },
   ]
   const { currentProcessData } = useContext(ResultsContext)
+  const { download } = useDownload()
+
+  const downloadExcel = () => {
+    download('/votacion.xlsx')
+  }
+
   return (
     <div>
       {currentProcessData ? (
         <>
-          <h1>{currentProcessData[0].nombre}</h1>
-          <Table<any>
-            columns={columns}
-            dataSource={currentProcessData[0].opciones}
-            pagination={false}
-          />
+          {currentProcessData[0] && (
+            <>
+              <Row style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+                <Col span={24}>
+                  <h1>{currentProcessData[0].nombre}</h1>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={24}>
+                  <div className="alert" style={{ marginBottom: '10px' }}>
+                    <div>
+                      La data que presentamos en APOD corresponde a la
+                      información que ha sido recopilada a través de nuestra
+                      plataforma. Esta información puede ser parcial y en ningun
+                      caso representa el resultado completo de las votaciones
+                    </div>
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                        paddingTop: '10px',
+                      }}
+                    >
+                      <Button type="primary" onClick={() => downloadExcel()}>
+                        <FileExcelOutlined />
+                        <span style={{ paddingRight: '10px' }}>
+                          Descargar Excel
+                        </span>
+                      </Button>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
+              {currentProcessData[0].opciones && (
+                <Table<any>
+                  columns={columns}
+                  dataSource={currentProcessData[0].opciones}
+                  pagination={false}
+                />
+              )}
+            </>
+          )}
         </>
       ) : (
         <div />

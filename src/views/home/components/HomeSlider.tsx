@@ -1,7 +1,7 @@
 import { Button, Col, Row } from 'antd'
 import React from 'react'
 import '../HomeView.scss'
-import movilSlide from '../../../assets/images/slider/movil-slider.jpg'
+import movilSlide from '../../../assets/images/slider/movil-slider.png'
 import { useHistory } from 'react-router'
 
 interface Props {}

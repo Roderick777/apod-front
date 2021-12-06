@@ -1,13 +1,14 @@
 import React from 'react'
+import './Footer.scss'
 
 interface Props {}
 
-const Footer = (props: Props) => {
+export const Footer = (props: Props) => {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className="footer">
+      <div className="footer-card">
+        Correo de contacto: &nbsp;<b>apod.network@gmail.com</b>
+      </div>
     </div>
   )
 }
-
-export default Footer
